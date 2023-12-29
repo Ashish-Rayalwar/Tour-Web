@@ -31,7 +31,7 @@ app.use("/api/travelious_tour", tourRouter);
 
 //google auth
 
-app.use(express.static(path.join(__dirname, "./build")));
+// app.use(express.static(path.join(__dirname, "./build")));
 
 app.listen(PORT, async () => {
   try {
@@ -42,7 +42,7 @@ app.listen(PORT, async () => {
   }
 });
 
-app.get("*", (req, res) => {
-  const file = path.join(__dirname, "./build/index.html");
-  res.sendFile(file);
-});
+// app.get("*", (req, res) => {
+//   const file = path.join(__dirname, "./build/index.html");
+//   res.sendFile(file);
+// });
